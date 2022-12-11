@@ -1,0 +1,33 @@
+<header class="main-header">
+    <h1 class="main-header__title">
+        <span class="main-header__title--orange">
+            <i class="fa-brands fa-deezer"></i>
+        </span>
+        <span>
+            Deezer
+        </span>
+        <span class="main-header__title--orange">Api</span>
+    </h1>
+    <div class="container-menu">
+    <nav class="main-header__menu">
+        <ul>
+            <li>
+                <a>
+                    Top Músicas do Momento
+                </a>
+                <a href="https://www.deezer.com/" target="_blank">
+                    Deezer
+                    <i class="fa-brands fa-deezer"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <form class="search-form">
+        <a>
+            Pesquise sua música:
+        </a>
+        <input id="nomeMusica" class="form-control" type="text">
+        <button onclick="buscarMusica(document.getElementById('nomeMusica').value)"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    </div>
+</header>
