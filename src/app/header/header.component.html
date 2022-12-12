@@ -22,6 +22,12 @@
             </li>
         </ul>
     </nav>
-    <app-barra-pesquisa></app-barra-pesquisa>
+    <form class="search-form">
+        <a>
+            Pesquise sua música:
+        </a>
+        <input id="nomeMusica" class="form-control" type="text">
+        <button onclick="obterListaMusica(document.getElementById('nomeMusica').value)"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+    </form>
     </div>
 </header>

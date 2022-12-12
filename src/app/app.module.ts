@@ -1,39 +1,36 @@
-import { NgModule } from '@angular/core';
+// Importar modulos
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule} from '@angular/router'
+import { NgModule } from '@angular/core';
+import { RouterModule, ROUTES} from '@angular/router'
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRoutingModule } from './app-routing.module';
+
 
 // Importar componentes
-
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { CardComponent } from './card/card.component';
 
-// Importar Rotas
-import { Router } from '@angular/router';
-
-// Importar Serviços
+// Importar serviços
 import { DeezerService } from './deezer.service';
-import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.component';
-
+import { routes } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     HeaderComponent,
-    FooterComponent,
-    BarraPesquisaComponent 
+    CardComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    BrowserAnimationsModule,
-    AppRoutingModule
+    RouterModule.forRoot( routes, { useHash: true}),
+    BrowserAnimationsModule
   ],
   providers: [
-    DeezerService
+      DeezerService
   ],
   bootstrap: [AppComponent]
 })

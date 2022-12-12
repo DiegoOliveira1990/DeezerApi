@@ -1,14 +1,1 @@
-<section class="track-list">
-    <div class="track-list__card">
-        <a class="track-list__link">
-            <img [src]="">
-            <h2 class="track-item__artist">
-                artista
-            </h2>
-            <p class="track-item__name">
-                Track
-            </p>
-            <button class="track-item__save-button" type="button">Salvar</button>
-        </a>
-    </div>
-</section>
+<app-card *ngIf="!loading" [items]="albumnExist"></app-card>
