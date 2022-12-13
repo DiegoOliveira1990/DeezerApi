@@ -1,0 +1,56 @@
+.track__container {
+    display: flex;
+    column-gap: 200px;
+    margin: 50px 0;
+}
+
+.track-description__container {
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 50px;
+    flex: 1;
+}
+
+.artist__name {
+    font-size: 36px;
+}
+
+.playlist__name {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 20px 0 20px;
+}
+
+.track-image__container {
+    align-self: center;
+}
+
+.track__container img {
+    width: 250px;
+    height: 250px;
+}
+
+button {
+    background-color: var(--orange);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    transition: .3s all;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+thead {
+    color: var(--gray);
+    font-size: 18px;
+}
+
+tbody {
+    color: var(--gray);
+}
+.track-name {
+    vertical-align: middle;
+}
+
+

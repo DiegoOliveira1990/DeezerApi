@@ -12,16 +12,24 @@
     box-sizing: border-box;
     padding: 10px;
     border-radius: 4px;
-    flex: 0 1 270px;
-    height: 250px;
+    flex: 0 1 170px;
+    height: 300px;
     background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;       
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    vertical-align: middle;       
 }
 
 .track-list__card:hover {
     outline: 1px solid var(--orange);
     transform: scale(1.1, 1.1);
     cursor: pointer;
+}
+
+.track-list__card img {
+    height: 100px;
+    width: 100px;    
+    display: block;
+    border-radius: 4px;
 }
 
 .track-list__link {
@@ -32,34 +40,14 @@
     text-decoration: none;
 }
 
-.track-list__card img {
-    height: 100px;
-    width: 100px;    
-    display: block;
-    border-radius: 4px;
-}
-
 .track-item__artist {
-    font-size: 18px;
+    font-size: 15px;
     color: var(--orange);
 }
 
 .track-item__name {
     color: var(--gray);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
+    align-items: center;
 }
-
-.track-item__save-button {
-    background-color: var(--orange);
-    border: none;
-    color: white;
-    font-size: 20px;
-    padding: 2px 8px;
-}
-
-.track-item__save-button:hover {
-    filter: brightness(1.1);
-    cursor: pointer;
-}
-  

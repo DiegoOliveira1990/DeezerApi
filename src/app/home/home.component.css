@@ -1,0 +1,8 @@
+.main-titulo {
+    padding: 30px 60px;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}

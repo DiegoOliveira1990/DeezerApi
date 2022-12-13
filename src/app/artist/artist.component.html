@@ -1,0 +1,31 @@
+<section class="track__container">
+  
+  <div class="track-description__container">
+    <h2 class="artist__name">{{artist.name}}</h2>
+    <h4 class="playlist__name">{{ artistPlaylistTitle }}</h4>
+    <div class="track-image__container">
+      <img [src]="artist.picture_xl" alt="">
+    </div>
+    <p>
+      <a [href]="artist.link" target="_blank">Ir Para a página do Artista</a>
+    </p>
+    <button routerLink="/search">Voltar</button>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Prévia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let track of artistPlaylist">
+        <td class="track-name">{{ track.title_short }} </td>
+        <td>
+          <audio [src]="track.preview" controls></audio>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</section>

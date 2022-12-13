@@ -1,14 +1,14 @@
-<section class="track-list">
-    <div class="track-list__card" *ngFor="let item of items">
+<div class="track-list" >
+    <div *ngFor="let item of items" class="track-list__card">
         <a class="track-list__link">
-            <img [src]="item.album.cover">
-            <h2 class="track-item__artist">
-                {{item.artist.name}}
-            </h2>
-            <p class="track-item__name">
+            <img [src]="item.album.cover" alt="..." (click)="getArtistId(item)">
+            <h2 class="track-item__name">
                 {{item.title}}
+            </h2>
+            <p class="track-item__artist">
+                {{item.artist.name}}
             </p>
-            <button class="track-item__save-button" type="button">Salvar</button>
         </a>
     </div>
-  </section>
+</div>
+  
