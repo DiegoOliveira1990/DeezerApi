@@ -36,7 +36,7 @@ button {
     border: none;
     padding: 10px;
     color: white;
-    font-size: 24px;
+    font-size: 15px;
     transition: .3s all;
     margin: 20px 0;
     cursor: pointer;
@@ -57,7 +57,6 @@ thead {
 
 tbody {
     color: var(--gray);
-    margin: auto;
 }
 
 .track-name {
@@ -67,6 +66,11 @@ tbody {
 
 .track-preview {
     padding: 5px 50px;
+    vertical-align: middle;
+}
+
+.button__save {
+    vertical-align: middle;
 }
 
 
