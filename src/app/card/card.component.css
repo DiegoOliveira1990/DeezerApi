@@ -16,7 +16,8 @@
     height: 300px;
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    vertical-align: middle;       
+    vertical-align: middle;
+    transition: transform 0.3s;       
 }
 
 .track-list__card:hover {

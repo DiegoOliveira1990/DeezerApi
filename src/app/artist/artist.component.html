@@ -1,5 +1,4 @@
 <section class="track__container">
-  
   <div class="track-description__container">
     <h2 class="artist__name">{{artist.name}}</h2>
     <h4 class="playlist__name">{{ artistPlaylistTitle }}</h4>
@@ -11,21 +10,23 @@
     </p>
     <button routerLink="/search">Voltar</button>
   </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Prévia</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let track of artistPlaylist">
-        <td class="track-name">{{ track.title_short }} </td>
-        <td>
-          <audio [src]="track.preview" controls></audio>
-        </td>
+  <div class="playlist__container">
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Prévia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let track of artistPlaylist">
+          <td class="track-name">{{ track.title_short }} </td>
+          <td>
+            <audio [src]="track.preview" controls class="track-preview"></audio>
+          </td>
 
-      </tr>
-    </tbody>
-  </table>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
